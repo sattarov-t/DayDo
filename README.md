@@ -1,4 +1,4 @@
-# # Project Name
+# DayDo
 
 This app is designed to streamline your daily organization and planning.
 
