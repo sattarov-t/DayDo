@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35E96F63EF6AE285880561C1 /* Pods_DayDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F91799E2D7E5BE5808E95FE /* Pods_DayDo.framework */; };
+		3901ED842A20C8B600B559D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3901ED832A20C8B600B559D1 /* AppDelegate.swift */; };
+		3901ED862A20C8B600B559D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3901ED852A20C8B600B559D1 /* SceneDelegate.swift */; };
+		3901ED8B2A20C8B600B559D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3901ED892A20C8B600B559D1 /* Main.storyboard */; };
+		3901ED8D2A20C8B700B559D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3901ED8C2A20C8B700B559D1 /* Assets.xcassets */; };
+		3901ED902A20C8B700B559D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3901ED8E2A20C8B700B559D1 /* LaunchScreen.storyboard */; };
+		3901ED9F2A20E33000B559D1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3901ED9E2A20E33000B559D1 /* Category.swift */; };
+		3901EDA12A20E35000B559D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3901EDA02A20E35000B559D1 /* Item.swift */; };
+		3932626A2A224B0F003B4EDE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393262692A224B0F003B4EDE /* CategoryViewController.swift */; };
+		3932626C2A226466003B4EDE /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932626B2A226466003B4EDE /* Funcs.swift */; };
+		3932626E2A229335003B4EDE /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932626D2A229335003B4EDE /* DoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3901ED802A20C8B600B559D1 /* DayDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3901ED832A20C8B600B559D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3901ED852A20C8B600B559D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3901ED8A2A20C8B600B559D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3901ED8C2A20C8B700B559D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3901ED8F2A20C8B700B559D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3901ED912A20C8B700B559D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3901ED9E2A20E33000B559D1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3901EDA02A20E35000B559D1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		393262692A224B0F003B4EDE /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		3932626B2A226466003B4EDE /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs.swift; sourceTree = "<group>"; };
+		3932626D2A229335003B4EDE /* DoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoViewController.swift; sourceTree = "<group>"; };
+		4F91799E2D7E5BE5808E95FE /* Pods_DayDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7BD74277683E32F6560D5B2 /* Pods-DayDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDo.debug.xcconfig"; path = "Target Support Files/Pods-DayDo/Pods-DayDo.debug.xcconfig"; sourceTree = "<group>"; };
+		EE9CDA67B4DCE5FE2043CA50 /* Pods-DayDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDo.release.xcconfig"; path = "Target Support Files/Pods-DayDo/Pods-DayDo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3901ED7D2A20C8B600B559D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E96F63EF6AE285880561C1 /* Pods_DayDo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3901ED772A20C8B500B559D1 = {
+			isa = PBXGroup;
+			children = (
+				3901ED822A20C8B600B559D1 /* DayDo */,
+				3901ED812A20C8B600B559D1 /* Products */,
+				A37800E32F2E7DE7F538DC87 /* Pods */,
+				A3D8E0995C3057DDAF33CBED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3901ED812A20C8B600B559D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3901ED802A20C8B600B559D1 /* DayDo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3901ED822A20C8B600B559D1 /* DayDo */ = {
+			isa = PBXGroup;
+			children = (
+				3901ED832A20C8B600B559D1 /* AppDelegate.swift */,
+				3901ED852A20C8B600B559D1 /* SceneDelegate.swift */,
+				3901ED9D2A20E30800B559D1 /* Data Model */,
+				3901ED972A20D6CE00B559D1 /* Controller */,
+				3901ED982A20D6DA00B559D1 /* View */,
+				3901ED992A20D6E100B559D1 /* Supporting files */,
+				3901ED912A20C8B700B559D1 /* Info.plist */,
+			);
+			path = DayDo;
+			sourceTree = "<group>";
+		};
+		3901ED972A20D6CE00B559D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				393262692A224B0F003B4EDE /* CategoryViewController.swift */,
+				3932626D2A229335003B4EDE /* DoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3901ED982A20D6DA00B559D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3901ED892A20C8B600B559D1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3901ED992A20D6E100B559D1 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3901ED8E2A20C8B700B559D1 /* LaunchScreen.storyboard */,
+				3901ED8C2A20C8B700B559D1 /* Assets.xcassets */,
+				3932626B2A226466003B4EDE /* Funcs.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		3901ED9D2A20E30800B559D1 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				3901ED9E2A20E33000B559D1 /* Category.swift */,
+				3901EDA02A20E35000B559D1 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		A37800E32F2E7DE7F538DC87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7BD74277683E32F6560D5B2 /* Pods-DayDo.debug.xcconfig */,
+				EE9CDA67B4DCE5FE2043CA50 /* Pods-DayDo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3D8E0995C3057DDAF33CBED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F91799E2D7E5BE5808E95FE /* Pods_DayDo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3901ED7F2A20C8B600B559D1 /* DayDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3901ED942A20C8B700B559D1 /* Build configuration list for PBXNativeTarget "DayDo" */;
+			buildPhases = (
+				2296FBA858695B21D7A2EF22 /* [CP] Check Pods Manifest.lock */,
+				3901ED7C2A20C8B600B559D1 /* Sources */,
+				3901ED7D2A20C8B600B559D1 /* Frameworks */,
+				3901ED7E2A20C8B600B559D1 /* Resources */,
+				AFF820ECBFF2A1F9673BEF58 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayDo;
+			productName = DayDo;
+			productReference = 3901ED802A20C8B600B559D1 /* DayDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3901ED782A20C8B500B559D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3901ED7F2A20C8B600B559D1 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 3901ED7B2A20C8B500B559D1 /* Build configuration list for PBXProject "DayDo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3901ED772A20C8B500B559D1;
+			productRefGroup = 3901ED812A20C8B600B559D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3901ED7F2A20C8B600B559D1 /* DayDo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3901ED7E2A20C8B600B559D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3901ED902A20C8B700B559D1 /* LaunchScreen.storyboard in Resources */,
+				3901ED8D2A20C8B700B559D1 /* Assets.xcassets in Resources */,
+				3901ED8B2A20C8B600B559D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2296FBA858695B21D7A2EF22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayDo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF820ECBFF2A1F9673BEF58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayDo/Pods-DayDo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayDo/Pods-DayDo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DayDo/Pods-DayDo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3901ED7C2A20C8B600B559D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3932626A2A224B0F003B4EDE /* CategoryViewController.swift in Sources */,
+				3901ED9F2A20E33000B559D1 /* Category.swift in Sources */,
+				3901ED842A20C8B600B559D1 /* AppDelegate.swift in Sources */,
+				3932626C2A226466003B4EDE /* Funcs.swift in Sources */,
+				3901ED862A20C8B600B559D1 /* SceneDelegate.swift in Sources */,
+				3901EDA12A20E35000B559D1 /* Item.swift in Sources */,
+				3932626E2A229335003B4EDE /* DoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3901ED892A20C8B600B559D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3901ED8A2A20C8B600B559D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3901ED8E2A20C8B700B559D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3901ED8F2A20C8B700B559D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3901ED922A20C8B700B559D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3901ED932A20C8B700B559D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3901ED952A20C8B700B559D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7BD74277683E32F6560D5B2 /* Pods-DayDo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M537FVXGVM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DayDo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daydo.sattarov.DayDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3901ED962A20C8B700B559D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9CDA67B4DCE5FE2043CA50 /* Pods-DayDo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M537FVXGVM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DayDo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daydo.sattarov.DayDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3901ED7B2A20C8B500B559D1 /* Build configuration list for PBXProject "DayDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3901ED922A20C8B700B559D1 /* Debug */,
+				3901ED932A20C8B700B559D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3901ED942A20C8B700B559D1 /* Build configuration list for PBXNativeTarget "DayDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3901ED952A20C8B700B559D1 /* Debug */,
+				3901ED962A20C8B700B559D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3901ED782A20C8B500B559D1 /* Project object */;
+}
