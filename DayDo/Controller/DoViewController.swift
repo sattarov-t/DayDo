@@ -114,7 +114,7 @@ class DoViewController: UITableViewController {
         
         func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
             
-            doItems = doItems?.filter("title CONTAINS[cd] %@", searchBar.text).sorted(byKeyPath: "creationDate", ascending: true)
+            doItems = doItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "creationDate", ascending: true)
             
             tableView.reloadData()
             

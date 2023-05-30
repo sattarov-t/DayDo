@@ -6,5 +6,7 @@ target 'DayDo' do
 
   # Pods for DayDo
   pod 'RealmSwift'
+  pod 'SwipeCellKit'
+
 
 end
