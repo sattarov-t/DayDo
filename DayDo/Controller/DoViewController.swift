@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class DoViewController: UITableViewController {
+class DoViewController: SwipeTableViewController {
     
     let realm = try! Realm()
     var doItems : Results<Item>?
@@ -23,9 +23,6 @@ class DoViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //        loadItems()
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -40,7 +37,8 @@ class DoViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DoCell", for: indexPath)
+        
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
         if let item = doItems?[indexPath.row] {
             cell.textLabel?.text = item.title
@@ -107,29 +105,43 @@ class DoViewController: UITableViewController {
     func loadItems() {
         doItems = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
     }
-}
-    //MARK: - Search bar methods
-    
-    extension DoViewController: UISearchBarDelegate {
-        
-        func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-            
-            doItems = doItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "creationDate", ascending: true)
-            
-            tableView.reloadData()
-            
-            
-        }
-        
-        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-            if searchBar.text?.count == 0 {
-                loadItems()
-                DispatchQueue.main.async {
-                    searchBar.resignFirstResponder()
+    //MARK: - Delete Data from Swipe
+    //Create model for using swipe in CategoryController and DoController
+    override func updateModel(at indexPath: IndexPath) {
+        if let doForDeletion = self.doItems?[indexPath.row] {
+            do {
+                try self.realm.write {
+                    self.realm.delete(doForDeletion)
                 }
-                
+            } catch {
+                print("Error with deleting category\(error)")
+            }
+        }
+    }
+    
+}
+
+//MARK: - Search bar methods
+
+extension DoViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        doItems = doItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "creationDate", ascending: true)
+        
+        tableView.reloadData()
+        
+        
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            loadItems()
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
             }
             
-            //Конец фигурной скобки
         }
-    } 
+    }
+    
+}

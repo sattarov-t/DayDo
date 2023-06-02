@@ -18,6 +18,7 @@
 		3932626A2A224B0F003B4EDE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393262692A224B0F003B4EDE /* CategoryViewController.swift */; };
 		3932626C2A226466003B4EDE /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932626B2A226466003B4EDE /* Funcs.swift */; };
 		3932626E2A229335003B4EDE /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932626D2A229335003B4EDE /* DoViewController.swift */; };
+		39EA7DFF2A2772670098615D /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA7DFE2A2772670098615D /* SwipeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		393262692A224B0F003B4EDE /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3932626B2A226466003B4EDE /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs.swift; sourceTree = "<group>"; };
 		3932626D2A229335003B4EDE /* DoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoViewController.swift; sourceTree = "<group>"; };
+		39EA7DFE2A2772670098615D /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		4F91799E2D7E5BE5808E95FE /* Pods_DayDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BD74277683E32F6560D5B2 /* Pods-DayDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDo.debug.xcconfig"; path = "Target Support Files/Pods-DayDo/Pods-DayDo.debug.xcconfig"; sourceTree = "<group>"; };
 		EE9CDA67B4DCE5FE2043CA50 /* Pods-DayDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDo.release.xcconfig"; path = "Target Support Files/Pods-DayDo/Pods-DayDo.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,8 +75,8 @@
 			children = (
 				3901ED832A20C8B600B559D1 /* AppDelegate.swift */,
 				3901ED852A20C8B600B559D1 /* SceneDelegate.swift */,
-				3901ED9D2A20E30800B559D1 /* Data Model */,
 				3901ED972A20D6CE00B559D1 /* Controller */,
+				3901ED9D2A20E30800B559D1 /* Data Model */,
 				3901ED982A20D6DA00B559D1 /* View */,
 				3901ED992A20D6E100B559D1 /* Supporting files */,
 				3901ED912A20C8B700B559D1 /* Info.plist */,
@@ -87,6 +89,7 @@
 			children = (
 				393262692A224B0F003B4EDE /* CategoryViewController.swift */,
 				3932626D2A229335003B4EDE /* DoViewController.swift */,
+				39EA7DFE2A2772670098615D /* SwipeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EA7DFF2A2772670098615D /* SwipeTableViewController.swift in Sources */,
 				3932626A2A224B0F003B4EDE /* CategoryViewController.swift in Sources */,
 				3901ED9F2A20E33000B559D1 /* Category.swift in Sources */,
 				3901ED842A20C8B600B559D1 /* AppDelegate.swift in Sources */,
